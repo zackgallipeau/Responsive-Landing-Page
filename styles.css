@@ -96,26 +96,36 @@ h4 {
 }
 
 .hero-image {
-  max-width: 15rem;
+  max-width: 20rem;
+}
+
+.rem-50 {
+  min-height: 50rem;
 }
 
 .hi-1 {
   position: absolute;
+  top: 8rem;
+  left: -2rem;
   z-index: 3;
 }
 
 .hi-2 {
   position: absolute;
-  top: -1rem;
-  right: 1rem;
+  top: 6rem;
+  left: 2rem;
+  transform: rotate(5deg);
   z-index: 2;
+  transition: 1s;
 }
 
 .hi-3 {
   position: absolute;
-  top: -1rem;
-  right: 1rem;
+  top: 4rem;
+  left: 6rem;
+  transform: rotate(10deg);
   z-index: 1;
+  transition: 1s;
 }
 
 img {
@@ -139,7 +149,6 @@ img {
   padding-left: 1rem;
   align-self: end;
   margin: auto 0;
-  background-color: blue;
 }
 
 p {
