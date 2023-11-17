@@ -1,51 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&display=swap");
 *,
 ::before,
 ::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 body {
   background-color: #f3ece8;
-  font-family: Source Sans Pro;
+  font-family: "Source Sans 3", sans-serif;
+  --color-primary: #1e1941;
+  --color-secondary: #f2660a;
+  color: #1e1941;
 }
 
 h1 {
   font-size: 4.5rem;
+  line-height: 100%;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  line-height: 115%;
 }
 
 h3 {
   font-size: 2rem;
+  line-height: 115%;
 }
 
 h4 {
   font-size: 1.5rem;
+  line-height: 120%;
+}
+
+.lopacity {
+  opacity: 80%;
 }
 
 .section-dark {
-  background-color: #1e1941;
+  background: rgb(87, 53, 23);
+  background: linear-gradient(
+    135deg,
+    rgba(87, 53, 23, 1) 0%,
+    rgba(30, 25, 65, 1) 40%,
+    rgba(30, 25, 65, 1) 60%,
+    rgba(87, 53, 23, 1) 100%
+  );
   color: #efefef;
   padding: 5rem 1rem;
+  min-height: 50rem;
 }
 
 .section-light {
-  color: #1e1941;
+  background-color: #f3ece8;
+  color: var(--color-primary);
   padding: 5rem 1rem;
+  min-height: 35rem;
 }
 
 .section-bright {
-  background-color: #f2660a;
+  background-color: var(--color-secondary);
   color: #efefef;
+  min-height: 30rem;
+  padding: 5rem 1rem;
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1080px;
   margin: 0 auto;
+}
+
+.container-large {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.shrink {
+  flex-shrink: 1;
+}
+
+.grow {
+  flex-grow: 1;
+  margin-bottom: 10rem;
 }
 
 .hero-content {
@@ -53,4 +92,111 @@ h4 {
   display: flex;
   flex-direction: vertical;
   align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image {
+  max-width: 15rem;
+}
+
+.hi-1 {
+  position: absolute;
+  z-index: 3;
+}
+
+.hi-2 {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  z-index: 2;
+}
+
+.hi-3 {
+  position: absolute;
+  top: -1rem;
+  right: 1rem;
+  z-index: 1;
+}
+
+img {
+  width: 100%;
+}
+
+.child-70 {
+  width: 70%;
+  align-self: start;
+  margin: auto 0;
+}
+
+.div-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.child-30 {
+  width: 40%;
+  padding-left: 1rem;
+  align-self: end;
+  margin: auto 0;
+  background-color: blue;
+}
+
+p {
+  font-size: 1.25rem;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.spacer {
+  height: 1rem;
+}
+
+.spacer-narrow {
+  height: 0.5rem;
+}
+
+.spacer-large {
+  height: 3rem;
+}
+
+.fade-in {
+  width: 90%;
+  border-radius: 60px;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+
+.p-narrow {
+  max-width: 50ch;
+}
+
+.centered {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.row-item {
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.icon {
+  max-width: 50%;
+}
+
+.margin-bottom {
+  margin-bottom: auto;
+}
+
+.relative {
+  position: relative;
 }
