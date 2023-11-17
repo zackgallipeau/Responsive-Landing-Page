@@ -1,0 +1,56 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f3ece8;
+  font-family: Source Sans Pro;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.section-dark {
+  background-color: #1e1941;
+  color: #efefef;
+  padding: 5rem 1rem;
+}
+
+.section-light {
+  color: #1e1941;
+  padding: 5rem 1rem;
+}
+
+.section-bright {
+  background-color: #f2660a;
+  color: #efefef;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  min-height: 50rem;
+  display: flex;
+  flex-direction: vertical;
+  align-items: center;
+}
