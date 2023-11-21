@@ -12,6 +12,9 @@
 
 //WEBSITE LOAD ANIMATIONS
 const allSections = document.querySelectorAll(".section");
+allSections.forEach((section) => {
+  section.classList.add(`${section.dataset.transition}`);
+});
 
 document.getElementById("hero2").classList.remove("hi-2");
 document.getElementById("hero2").classList.add("hi-1");
@@ -35,24 +38,36 @@ function callback(entries, observer) {
 
   if (entry.isIntersecting) {
     entry.target.classList.remove(`${entry.target.dataset.transition}`);
-    console.log(`${entry.target.dataset.transition}`);
   } else {
     entry.target.classList.add(`${entry.target.dataset.transition}`);
   }
 }
 
 const observer = new IntersectionObserver(callback, {
-  root: null,
-  threshold: 0.2,
+  root: document.querySelector("#scrollArea"),
+  threshold: 0.3,
 });
 
 allSections.forEach((section) => {
   observer.observe(section);
 });
 
-// if (entry.isIntersecting) {
-//     entry.target.classList.remove('section--hidden');
-//   } else {
-//     entry.target.classList.add('section--hidden');
-//   }
-// }
+//Hero section hover animation
+const hero1 = document.getElementById("hero1");
+const hero2 = document.getElementById("hero2");
+const hero3 = document.getElementById("hero3");
+
+function heroExpand() {
+  hero1.classList.add("hi-1b");
+  hero2.classList.add("hi-2b");
+  hero3.classList.add("hi-3b");
+}
+
+function heroContract() {
+  hero1.classList.remove("hi-1b");
+  hero2.classList.remove("hi-2b");
+  hero3.classList.remove("hi-3b");
+}
+
+hero1.addEventListener("mouseover", heroExpand);
+hero1.addEventListener("mouseleave", heroContract);

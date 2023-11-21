@@ -19,44 +19,63 @@
       <nav>
         <div class="container-large">
           <div class="nav">
-            <img src="/logos/logo-primary.png" class="navlogo" />
-            <div class="wrapper-column">
-              <ul>
+            <a href="#hero" class="logo-link"
+              ><img src="/logos/logo-primary.png" class="navlogo"
+            /></a>
+            <div class="wrapper-row">
+              <!-- <ul>
                 <a><li class="nav-link">Intro</li></a>
                 <a><li class="nav-link">Why Fitlife Plus</li></a>
                 <a><li class="nav-link">Testimonials</li></a>
                 <a><li class="nav-link btn-nav">Start Your Journey</li></a>
-              </ul>
+              </ul> -->
+              <div class="nav-link-container">
+                <a class="nav-link" href="#intro">Intro</a>
+              </div>
+              <div class="nav-link-container">
+                <a class="nav-link" href="#why-fp">Why Fitlife Plus</a>
+              </div>
+              <div class="nav-link-container">
+                <a class="nav-link" href="#testimonials">Testimonials</a>
+              </div>
+              <div class="nav-link-container">
+                <a class="btn-nav" href="#cta">Start Your Journey</a>
+              </div>
             </div>
           </div>
         </div>
       </nav>
-      <section id="hero" class="section-light" data-transition="fade-in">
+      <section
+        id="hero"
+        class="section section-light"
+        data-transition="fade-in"
+      >
         <div class="container-large">
           <div class="hero-content">
             <div class="child-70">
               <h1>Elevate your health.<br />Transform your life.</h1>
+              <div class="spacer-small"></div>
               <h2 class="h2-small">Empowering Your Journey to Wellness.</h2>
               <div class="spacer"></div>
-              <div class="spacer-small"></div>
+              <div class="spacer"></div>
               <button class="btn-primary">Start Your Journey</button>
             </div>
             <div class="child-30">
               <div class="relative rem-50">
                 <img
-                  src="/images/heroplaceholder.png"
+                  src="/images/screen1.png"
                   alt="Image of a phone displaying the FitLife Plus app."
                   class="hero-image hi-1 z3"
                   id="hero1"
                 />
                 <img
-                  src="/images/heroplaceholder.png"
+                  src="/images/screen2.png"
                   alt="hi"
                   class="hero-image hi-2 z2"
                   id="hero2"
                 />
                 <img
-                  src="/images/heroplaceholder.png"
+                  src="/images/screen3.png"
                   alt="hi"
                   class="hero-image hi-3 z1"
                   id="hero3"
@@ -87,7 +106,7 @@
               </p>
             </div>
             <div class="child-30">
-              <img src="/images/heroplaceholder.png" />
+              <img src="/images/screen2.png" />
             </div>
           </div>
         </div>
@@ -170,7 +189,7 @@
       </section>
 
       <section
-        id="testimonies"
+        id="testimonials"
         class="section section-bright"
         data-transition="slide-in"
       >
@@ -184,7 +203,9 @@
           <div class="spacer-large"></div>
 
           <div class="slider-wrapper">
-            <div class="btn-slider"></div>
+            <div class="btn-slider">
+              <img src="/icons/btn-left.png" class="slider-arrow" />
+            </div>
             <div class="slider-content">
               <div class="slider-top">
                 <div class="slider-name">
@@ -197,7 +218,6 @@
                   alt="A woman resting after a workout and smiling at the camera"
                 />
               </div>
-              <div class="spacer-large"></div>
               <div class="slider-bottom">
                 <img class="quote" src="icons/quotation.png" />
                 <p>
@@ -214,7 +234,9 @@
                 </p>
               </div>
             </div>
-            <div class="btn-slider"></div>
+            <div class="btn-slider">
+              <img src="/icons/btn-right.png" class="slider-arrow" />
+            </div>
           </div>
         </div>
       </section>
@@ -249,13 +271,19 @@
       <div class="container">
         <div class="wrapper-row">
           <div class="child-70">
-            <img src="/logos/logo-light.png" alt="FitLife Plus logo" />
+            <a href="#hero"
+              ><img src="/logos/logo-light.png" alt="FitLife Plus logo"
+            /></a>
           </div>
           <div class="child-30">
             <ul>
-              <li><a>Intro</a></li>
-              <li><a>Why FitLife Plus</a></li>
-              <li><a>Testimonials</a></li>
+              <li><a href="#intro" class="footer-link">Intro</a></li>
+              <li>
+                <a href="#why-fp" class="footer-link">Why FitLife Plus</a>
+              </li>
+              <li>
+                <a href="#testimonials" class="footer-link">Testimonials</a>
+              </li>
               <li><a>Get Started</a></li>
             </ul>
           </div>
